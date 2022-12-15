@@ -1,0 +1,129 @@
+.js-gallery{
+    width: 100%;
+}
+
+.js-gallery,
+.js-gallery div,
+.js-gallery figure{
+    box-sizing: border-box;
+}
+
+.js-gallery figure{
+    min-height: 0;
+    min-width: 0;
+    margin: 0;
+}
+
+.js-gallery-bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    filter: brightness(0.3) blur(3px);
+}
+
+.js-gallery-main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.js-gallery-main:after{
+    display: block;
+    content: '';
+    padding-top: 50%;
+}
+
+.js-gallery-main figure{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.js-gallery-main img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.js-gallery-main figcaption{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.7);
+    padding: 0 0 .5em;
+    color: #fff;
+}
+
+.js-gallery-next,
+.js-gallery-last{
+    position: absolute;
+    z-index: 9;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.js-gallery-last{
+    left: 0;
+}
+
+.js-gallery-next{
+    right: 0;
+}
+
+.js-gallery-previews{
+    display: flex;
+    width: 100%;
+}
+
+.js-gallery-previews figure{
+    flex-shrink: 1;
+    overflow: hidden;
+    margin: 2px;
+    max-height: 100px;
+    min-height: 40px;
+    filter: contrast(0.5);
+}
+
+.js-gallery-previews figure:first-of-type{
+    margin-left: 0px;
+}
+
+.js-gallery-previews figure:last-of-type{
+    margin-right: 0px;
+}
+
+.js-gallery-previews figure:hover,
+.js-gallery-previews figure.active{
+    cursor: pointer;
+    filter: contrast(1.2);
+}
+
+.js-gallery-previews img{
+    width: auto;
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.js-gallery-previews figcaption{
+    display: none;
+}
