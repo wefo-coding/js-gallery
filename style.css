@@ -36,7 +36,7 @@
 .js-gallery-main:after{
     display: block;
     content: '';
-    padding-top: 50%;
+    padding-top: 56.25%;
 }
 
 .js-gallery-main figure{
@@ -92,6 +92,7 @@
 .js-gallery-previews{
     display: flex;
     width: 100%;
+    text-align: center;
 }
 
 .js-gallery-previews figure{
